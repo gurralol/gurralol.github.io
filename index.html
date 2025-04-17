@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Gurralol's Webpage</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	</head>
+	<body>
+	<div class="Container">
+		<div class="DivFirst">
+			<!-- <h1>Gurralol/Garfield</h1> -->
+			<img class="ImgGurralolGarfield" src="images/gurralolgarfield.gif">
+			<img src="images/garfieldprofilepicture.gif">
+			<p style="text-decoration: underline">Programmer/Artist/Goofball</p>
+			<a>links:</a><br>
+			<a href="https://refluxgames.itch.io/">https://refluxgames.itch.io/</a><br>
+			<a href="https://github.com/gurralol/">https://github.com/gurralol/</a>
+		</div>
+		<div class="DivFirst">
+			<h1>Skiwi</h1>
+			<img style="border:none" src="images/skiwibird.png">
+			<p>This is a game where you go skiing!</p>
+		</div>
+		<div class="DivFirst">
+			<h1>Tetrahedral Workshop</h1>
+			<p>Hello</p>
+		</div>
+		<div class="DivFirst">
+			<h1>Barfswap</h1>
+		</div>
+		<div class="DivFirst">
+			<h1>Wardogs</h1>
+		</div>
+		<div class="DivFirst">
+			<h1>Mopeds</h1>
+		</div>
+		<div class="DivFirst">
+			<h1>Grocery Cashier</h1>
+		</div>
+	</div>
+	
+		<!-- ⬇ Add the Masonry script and initializer here -->
+	  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	  <script>
+		window.onload = () => {
+		  new Masonry('.Container', {
+			itemSelector: '.DivFirst',
+			columnWidth: '.DivFirst',
+			percentPosition: true,
+			gutter: 10,
+			horizontalOrder: true
+		  });
+		};
+	  </script>
+	
+	</body>
+</html>
